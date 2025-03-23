@@ -1,0 +1,83 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container {
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(137deg, #4203a9, #90bafc);
+    color: #fff;
+    padding: 10px;
+}
+
+.calculateur {
+    width: 100%;
+    max-width: 600px;
+    margin-left: 10%;
+    margin-top: 10%;
+}
+
+.calculateur h1 {
+    font-size: 60px;
+}
+
+.calculateur h1 span {
+    color: #ffff76;
+}
+
+.input-box {
+    margin: 40px 0;
+    padding: 35px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.3);
+    display: flex;
+    align-items: center;
+}
+
+.input-box input[type="date"] {
+    flex: 1;
+    margin-right: 20px;
+    padding: 14px 20px;
+    border: 0;
+    outline: 0;
+    font-size: 18px;
+    border-radius: 5px;
+    position: relative;
+    cursor: pointer; /* Ajout du curseur pointer */
+    color: #333; /* Pour assurer la visibilité du texte */
+    background-color: white; /* Fond blanc pour meilleure visibilité */
+}
+
+.input-box input[type="date"]::-webkit-calendar-picker-indicator {
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: auto;
+    height: auto;
+    position: absolute;
+    opacity: 0;
+    cursor: pointer; 
+    background-position: calc(100% -10px); /* Assurer que l'arrière-plan est transparent */
+    background-size: 30px;
+    z-index: 1; /* S'assurer qu'il est au-dessus de tout le reste */
+}
+
+.input-box button{
+    background: #ffff76;
+    border: 0;
+    outline: 0;
+    padding: 15px 30px;
+    border-radius: 5px;
+    font-weight: 500;
+    color: #333;
+    cursor: pointer;
+}
+
+#result strong {
+    color: #ffff76; /* Choisis la couleur que tu veux */
+    font-weight: bold; /* Assure que le texte est en gras */
+}
